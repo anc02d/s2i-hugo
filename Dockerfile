@@ -20,4 +20,6 @@ RUN apk add --update git mercurial binutils && \
     rm -rf /go/src /go/pkg
 
 COPY ./s2i/* /usr/libexec/s2i/
+
+
 USER 1001
