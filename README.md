@@ -10,21 +10,21 @@ For more information about using these images with Digital Garage on OpenShift a
 
 Hugo versions currently provided are:
 
-GoLang 1.8-alpine
+GoLang 1.8.3-alpine
 
-Hugo v0.19
+Hugo v0.21
 
 ## How to use this image on Digital Garage with OpenShift and Kubernetes?
 
 Run:
 
 ```
-$ oc new-app thedigitalgarage/sti-hugo019-alpine~http://github.com/<org>/<hugo-repo>
+$ oc new-app thedigitalgarage/s2i-hugo:latest~http://github.com/<org>/<hugo-repo>
 ```
 
 ## Usage
 
-For information about usage of Dockerfile for Hugo v0.19, see usage documentation.
+For information about usage of Dockerfile for Hugo v0.21, see usage documentation.
 
 ## Repository organization
 
@@ -35,12 +35,3 @@ Dockerfile and scripts to build container images from.
 hack/
 
 Folder containing scripts which are responsible for the build and test actions performed by the Makefile.
-
-Image name structure
-
-Structure: thedigitalgarage/sti-1-2-3
-
-Platform name (lowercase) - hugo
-Platform version(without dots) - 019
-Base builder image - alpine
-Examples: thedigitalgarage/sti-hugo019-alpine
