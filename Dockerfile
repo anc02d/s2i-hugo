@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-MAINTAINER John McCawley <john.mccawley@thedigitalgarage.io>
+MAINTAINER the Digital Garage <support@thedigitalgarage.io>
 
 LABEL io.openshift.s2i.scripts-url=image:///usr/libexec/s2i
 
